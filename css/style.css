@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Shared Style */
+
+.container {
+    width: 85%;
+    max-width: 1170px;
+}
+
+/* Header */
+header {
+    width: 100%;
+
+}
