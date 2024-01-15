@@ -1,16 +1,137 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Mulish';
 }
 /* Shared Style */
 
 .container {
     width: 85%;
     max-width: 1170px;
+    margin: auto;
+}
+.paragraph {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.heading {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 /* Header */
 header {
     width: 100%;
+}
+.side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+.logo h1 {
+    margin-left: 17px;
+}
+.and {
+    color: #FF5400;
+    font-size: 40px;
+    font-weight: 800;
+}
+.logo img {
+    width: 55px;
+    height: 50px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 44px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav ul li a:hover {
+    color: #FF5400;
+}
+.icon {
+    display: none;
+}
 
+/* Main Section */
+
+main {
+    width: 100%;
+}
+.banner {
+    width: 100%;
+}
+.banner-content {
+    width: 680px;
+    text-align: center;
+}
+.banner-content h1 {
+    /* color: #fff; */
+    font-size: 64px;
+}
+.banner-content p {
+    /* color: #fff; */
+}
+
+
+
+
+
+
+@media screen and (max-width:992px) and (min-width:600px) {
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .logo h1 {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .and {
+        font-size: 25px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:600px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .logo h1 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .and {
+        font-size: 35px;
+    }
+    nav ul {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
 }
