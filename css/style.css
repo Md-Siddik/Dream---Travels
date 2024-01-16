@@ -29,7 +29,6 @@ section {
     background-color: var(--primary-color);
     border-radius: 8px;
     color: #FFF;
-    text-align: center;
     font-size: 20px;
     font-weight: 800;
     padding: 14px 25px;
@@ -50,6 +49,12 @@ section {
 .heading {
     color: #131318;
     font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.mini-heading {
+    color: #131318;
+    font-size: 24px;
     font-weight: 800;
     text-transform: capitalize;
 }
@@ -179,7 +184,7 @@ form i {
     margin-bottom: 100px;
 }
 .popular-text {
-    width: 560px;
+    width: 50%;
 }
 .popular-text p {
     margin-top: 0;
@@ -192,6 +197,12 @@ form i {
 }
 .popular-text ul li {
     margin-bottom: 16px;
+}
+.popular-image {
+    width: 50%;
+}
+.popular-image img {
+    width: 100%;
 }
 
 /* Destination Section */
@@ -215,21 +226,21 @@ form i {
 .row-1 {
     display: grid;
     gap: 24px;
-    grid-template-columns: 573px 573px;
+    grid-template-columns: 49% 49%;
     grid-template-rows: 300px;
     margin-bottom: 24px;
 }
 .row-2 {
     display: grid;
     gap: 24px;
-    grid-template-columns: 375px 475px 275px;
+    grid-template-columns: 33% 40% 23%;
     grid-template-rows: 286px;
     margin-bottom: 24px;
 }
 .row-3 {
     display: grid;
     gap: 24px;
-    grid-template-columns: 475px 675px;
+    grid-template-columns: 44% 54%;
     grid-template-rows: 300px;
     margin-bottom: 24px;
 }
@@ -259,6 +270,109 @@ form i {
 .photo-7 {
     background-image: url('../Images/Rectangle\ 10.png');
 }
+
+/* Choose Us section */
+
+.choose-text {
+    width: 645px;
+}
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.card-1, .card-2, .card-3 {
+    width: 48%;
+    border-radius: 16px;
+    background: green;
+    overflow: hidden;
+}
+.card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin: auto;
+}
+.card-content {
+    width: 90%;
+    margin: 20px auto;
+}
+.choose-card h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+/* Discount Section */
+
+.discount-area {
+    margin-bottom: 100px;
+}
+.discount-text {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.discount-card {
+    width: 100%;
+    background-image: url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin: 24px 0;
+}
+.discount-definition {
+    width: 45%;
+    border-radius: 16px;
+    margin: 50px;
+    background: rgba(255, 255, 255, 0.80);
+}
+.discount-icon, .duration, .max, .place {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.discount-icon img {
+    margin-right: 10px;
+}
+.discount-icon-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.discount-discribe {
+    width: 85%;
+    margin: auto;
+}
+.discount-discribe .price {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+.discount-discribe button {
+    margin: 5px 10px 60px 0;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.left {
+    background-image: url('../Images/Group\ 40.png');
+}
+.btn-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 
 
 
@@ -332,17 +446,85 @@ form i {
         flex-direction: column;
         margin-bottom: 40px;
     }
-    .popular-text, .popular-image {
-        width: 100%;
+    .popular-text {
+        width: 55%;
     }
     .popular-text {
         margin-bottom: 35px;
+    }
+    .popular-image {
+        width: 45%;
     }
     .popular-image img {
         width: 100%;
     }
 
+    /* Destination Responsive */
+
+    .destination-text {
+        width: 95%;
+    }
+    .destination-text h1 {
+        font-size: 30px;
+    }
+    .row-1 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 300px;
+        margin-bottom: 24px;
+    }
+    .row-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px;
+        margin-bottom: 24px;
+    }
+    .row-3 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 300px;
+        margin-bottom: 24px;
+    }
+
+    /* Choose Us Responsive */
+
+    .card-row {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .choose-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Discount Responsive */
+
+    .discount-icon {
+        flex-direction: column;
+    }
+    .duration, .max, .place {
+        padding: 10px 15px 0 15px;
+        justify-content: flex-start;
+    }
+    .discount-icon img {
+        width: 25px;
+        margin-right: 5px;
+    }
+    .discount-icon p {
+        font-size: 20px;
+    }
+
 }
+
 @media screen and (max-width:600px) {
 
     /* Shared Style Responsive */
@@ -431,6 +613,71 @@ form i {
     }
     .popular-text ul {
         padding: 10px 0px 5px 25px;
+    }
+
+    /* Destination Responsive */
+
+    .destination-text {
+        width: 90%;
+        margin: auto;
+    }
+    .row-1 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px;
+        margin-bottom: 24px;
+    }
+    .row-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px;
+        margin-bottom: 24px;
+    }
+    .row-3 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px;
+        margin-bottom: 24px;
+    }
+
+    /* Choose Us responsive */
+
+    .card-row {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .card-1, .card-2, .card-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .choose-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* Discount responsive */
+
+    .discount-icon {
+        flex-direction: column;
+    }
+    .duration, .max, .place {
+        padding: 10px 0px 0 0px;
+        justify-content: flex-start;
+    }
+    .discount-icon img {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .discount-icon p {
+        font-size: 15px;
+    }
+    .btn-content {
+        display: none;
     }
 
 }
