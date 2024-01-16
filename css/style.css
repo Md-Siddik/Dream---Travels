@@ -176,6 +176,7 @@ form i {
 .popular-flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .popular-text {
     width: 560px;
@@ -191,6 +192,72 @@ form i {
 }
 .popular-text ul li {
     margin-bottom: 16px;
+}
+
+/* Destination Section */
+
+.destination {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.destination-text {
+    width: 650px;
+    margin: auto;
+}
+.gallery {
+    width: 100%;
+    margin-top: 50px;
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+.row-1 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 573px 573px;
+    grid-template-rows: 300px;
+    margin-bottom: 24px;
+}
+.row-2 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 375px 475px 275px;
+    grid-template-rows: 286px;
+    margin-bottom: 24px;
+}
+.row-3 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 475px 675px;
+    grid-template-rows: 300px;
+    margin-bottom: 24px;
+}
+.photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-7 {
+    background-image: url('../Images/Rectangle\ 5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-2 {
+    background-image: url('../Images/Rectangle\ 8.png');
+}
+.photo-3 {
+    background-image: url('../Images/Rectangle\ 6.png');
+}
+.photo-4 {
+    background-image: url('../Images/Rectangle\ 7.png');
+}
+.photo-5 {
+    background-image: url('../Images/Rectangle\ 9.png');
+}
+.photo-6 {
+    background-image: url('../Images/Rectangle\ 11.png');
+}
+.photo-7 {
+    background-image: url('../Images/Rectangle\ 10.png');
 }
 
 
@@ -261,6 +328,20 @@ form i {
 
     /* Popular Tour Responsive */
 
+    .popular-flex {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .popular-text, .popular-image {
+        width: 100%;
+    }
+    .popular-text {
+        margin-bottom: 35px;
+    }
+    .popular-image img {
+        width: 100%;
+    }
+
 }
 @media screen and (max-width:600px) {
 
@@ -269,6 +350,12 @@ form i {
     .container {
         width: 90%;
         margin: auto;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+    .heading {
+        font-size: 30px;
     }
 
     /* Header Responsive */
@@ -299,6 +386,7 @@ form i {
         background-size: 200% 100%;
         background-position: center;
         padding: 40px 0;
+        margin-bottom: 15px;
     }
     .banner-content {
         width: 85%;
@@ -324,6 +412,25 @@ form i {
     }
     .info form input {
         width: 96%;
+    }
+
+    /* Popular Tour Responsive */
+
+    .popular-flex {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .popular-text, .popular-image {
+        width: 100%;
+    }
+    .popular-text {
+        margin-bottom: 35px;
+    }
+    .popular-image img {
+        width: 100%;
+    }
+    .popular-text ul {
+        padding: 10px 0px 5px 25px;
     }
 
 }
