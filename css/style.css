@@ -386,6 +386,45 @@ form i {
     margin-top: 50px;
 }
 
+/* Happy client section */
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.client-card {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #767676;
+    border-radius: 10px;
+}
+.card-content {
+    margin: 24px;
+}
+.card-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+.card-icon i {
+    font-size: 25px;
+}
+.rate {
+    color: green;
+}
+
 /* Place area */
 
 .place-flex {
@@ -696,6 +735,19 @@ footer {
         font-size: 20px;
     }
 
+    /* Card image */
+
+    .card-flex {
+        flex-direction: column;
+    }
+    .client-card {
+        margin-bottom: 40px;
+    }
+    .card-image {
+        width: 180px;
+        height: 180px;
+    }
+
     /* Place responsive */
 
     .place-flex {
@@ -902,7 +954,6 @@ footer {
         width: 50%;
     }
     .discount-icon img {
-        /* width: 20px; */
         margin-right: 5px;
     }
     .discount-icon p {
@@ -910,6 +961,21 @@ footer {
     }
     .btn-content {
         display: none;
+    }
+
+    /* Client card */
+
+    /* Card image */
+
+    .card-flex {
+        flex-direction: column;
+    }
+    .client-card {
+        margin-bottom: 40px;
+    }
+    .card-image {
+        width: 180px;
+        height: 180px;
     }
 
     /* Place responsive */
